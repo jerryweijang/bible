@@ -38,7 +38,7 @@ border: 2px ridge #000000;'>
 HTML_WRAPPER = """<div style="overflow-x: auto; border: 1px solid #e6e9ef; border-radius: 0.25rem; padding: 1rem">{}</div>"""
 HTML_BANNER = """
     <div style="background-color:#464e5f;padding:10px;border-radius:10px">
-    <h1 style="color:white;text-align:center;">StreamBible App </h1>
+    <h1 style="color:white;text-align:center;">Bible App </h1>
     </div>
     """
 
