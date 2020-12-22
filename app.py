@@ -96,7 +96,7 @@ def main():
         search_term = st.text_input("Term/Topic")
         with st.beta_expander("View Results"):
             retrieved_df = df[df["text"].str.contains(search_term)]
-            retrieved_df = retrieved_df.sort_values(by='book',ascending=True)
+            retrieved_df = retrieved_df.sort_values(by=['book', 'chapter','verse'],ascending=(True,True,True))
             st.dataframe(retrieved_df[["book", "chapter", "verse", "text"]])
 
     elif choice == "MultiVerse":
