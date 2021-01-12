@@ -96,11 +96,7 @@ def main():
         search_term = st.text_input("Term/Topic")
         with st.beta_expander("View Results"):
             retrieved_df = df[df["text"].str.contains(search_term)]
-            retrieved_df = retrieved_df.sort_values(by=['book', 'chapter','verse'],ascending=(True,True,True))
             st.dataframe(retrieved_df[["book", "chapter", "verse", "text"]])
-            
-            search_count = "Total {} rows".format(retrieved_df.shape[0])
-            st.info(search_count)
 
     elif choice == "MultiVerse":
         st.subheader("MultiVerse Retrieval")
